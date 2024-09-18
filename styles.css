@@ -1,0 +1,398 @@
+/** @format */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgrey;
+	margin: 0;
+	padding: 10% 0;
+}
+button {
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+	background-color: gray;
+	border-radius: 10px;
+}
+.container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	margin: auto 0;
+	padding: 1.5rem;
+	border-radius: 1rem;
+
+	grid-template-areas:
+	/* Row 01 */
+		"esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 prtSc insert delete playPause stop prev fwd"
+		/* Row 02 */
+		"backtick one-v two-v three-v four-v five-v six-v seven-v eight-v nine-v zero-v hypen1 equals backspace backspace backspace numLock fwd-slash-1 asterick hypen2"
+		/* Row 03 */
+		"tab tab Q W E R T Y U I O P open-sqr close-sqr bwd-slash bwd-slash seven-h eight-h nine-h sum"
+		/* Row 04 */
+		"capsLk capsLk A S D F G H J K L semi-colon inverted-comma enter-l enter-l enter-l four-h five-h six-h sum"
+		/* Row 05 */
+		"l-shift l-shift l-shift Z X C V B N M comma period fwd-slash-2 r-shift r-shift r-shift one-h two-h three-h enter-r"
+		/* Row 06 */
+		"l-ctrl fn windows l-alt spaceBar spaceBar spaceBar spaceBar spaceBar spaceBar r-alt r-ctrl left up-down right right zero-h zero-h period-2 enter-r";
+}
+
+*:active {
+	color: antiquewhite;
+}
+
+.container button{
+	font-size: 15px;
+
+}
+
+.row-1 {
+	height: 2.5rem;
+}
+
+.esc {
+	grid-area: esc;
+}
+.f1 {
+	grid-area: f1;
+}
+.f2 {
+	grid-area: f2;
+}
+.f3 {
+	grid-area: f3;
+}
+.f4 {
+	grid-area: f4;
+}
+.f5 {
+	grid-area: f5;
+}
+.f6 {
+	grid-area: f6;
+}
+.f7 {
+	grid-area: f7;
+}
+.f8 {
+	grid-area: f8;
+}
+.f9 {
+	grid-area: f9;
+}
+.f10 {
+	grid-area: f10;
+}
+.f11 {
+	grid-area: f11;
+}
+.f12 {
+	grid-area: f12;
+}
+.prtSc {
+	grid-area: prtSc;
+}
+.insert {
+	grid-area: insert;
+}
+.delete {
+	grid-area: delete;
+}
+.playPause {
+	grid-area: playPause;
+}
+.stop {
+	grid-area: stop;
+}
+.prev {
+	grid-area: prev;
+}
+.fwd {
+	grid-area: fwd;
+}
+
+/* Row 02 */
+
+.backtick {
+	grid-area: backtick;
+}
+.one-v {
+	grid-area: one-v;
+}
+.two-v {
+	grid-area: two-v;
+}
+.three-v {
+	grid-area: three-v;
+}
+.four-v {
+	grid-area: four-v;
+}
+.five-v {
+	grid-area: five-v;
+}
+.six-v {
+	grid-area: six-v;
+}
+.seven-v {
+	grid-area: seven-v;
+}
+.eight-v {
+	grid-area: eight-v;
+}
+.nine-v {
+	grid-area: nine-v;
+}
+.zero-v {
+	grid-area: zero-v;
+}
+.hypen1 {
+	grid-area: hypen1;
+}
+.equals {
+	grid-area: equals;
+}
+.backspace {
+	grid-area: backspace;
+	width: 12rem;
+}
+.numLock {
+	grid-area: numLock;
+}
+
+.fwd-slash-1 {
+	grid-area: fwd-slash-1;
+}
+.asterick {
+	grid-area: asterick;
+}
+.hypen2 {
+	grid-area: hypen2;
+}
+
+/* Row 03 */
+
+.row-3 {
+	/* margin-left: -3.2rem; */
+}
+/* Row 03 Keys */
+.tab {
+	grid-area: tab;
+	width: 8rem;
+}
+.Q {
+	grid-area: Q;
+}
+.W {
+	grid-area: W;
+}
+.E {
+	grid-area: E;
+}
+.R {
+	grid-area: R;
+}
+.T {
+	grid-area: T;
+}
+.Y {
+	grid-area: Y;
+}
+.U {
+	grid-area: U;
+}
+.I {
+	grid-area: I;
+}
+.O {
+	grid-area: O;
+}
+.P {
+	grid-area: P;
+}
+.open-sqr {
+	grid-area: open-sqr;
+}
+.close-sqr {
+	grid-area: close-sqr;
+}
+.bwd-slash {
+	grid-area: bwd-slash;
+}
+.seven-h {
+	grid-area: seven-h;
+}
+.eight-h {
+	grid-area: eight-h;
+}
+.nine-h {
+	grid-area: nine-h;
+}
+.sum {
+	grid-area: sum;
+	height: 8rem;
+}
+
+/* Row 04 */
+
+.row-4 {
+}
+
+/* Row 04 Keys */
+
+.capsLk {
+	grid-area: capsLk;
+	width: 8rem;
+}
+.A {
+	grid-area: A;
+}
+.S {
+	grid-area: S;
+}
+.D {
+	grid-area: D;
+}
+.F {
+	grid-area: F;
+}
+.G {
+	grid-area: G;
+}
+.H {
+	grid-area: H;
+}
+.J {
+	grid-area: J;
+}
+.K {
+	grid-area: K;
+}
+.L {
+	grid-area: L;
+}
+.semi-colon {
+	grid-area: semi-colon;
+}
+.inverted-comma {
+	grid-area: inverted-comma;
+}
+.enter-l {
+	grid-area: enter-l;
+	width: 8rem;
+}
+.four-h {
+	grid-area: four-h;
+}
+.five-h {
+	grid-area: five-h;
+}
+.six-h {
+	grid-area: six-h;
+}
+
+/* Row 05 */
+
+.l-shift {
+	grid-area: l-shift;
+	width: 12rem;
+}
+.Z {
+	grid-area: Z;
+}
+.X {
+	grid-area: X;
+}
+.C {
+	grid-area: C;
+}
+.V {
+	grid-area: V;
+}
+.B {
+	grid-area: B;
+}
+.N {
+	grid-area: N;
+}
+.M {
+	grid-area: M;
+}
+.comma {
+	grid-area: comma;
+}
+.period {
+	grid-area: period;
+}
+.fwd-slash-2 {
+	grid-area: fwd-slash-2;
+}
+.r-shift {
+	grid-area: r-shift;
+	width: 8rem;
+}
+.one-h {
+	grid-area: one-h;
+}
+.two-h {
+	grid-area: two-h;
+}
+.three-h {
+	grid-area: three-h;
+}
+.enter-r {
+	grid-area: enter-r;
+	height: 8rem;
+}
+
+/* Row 06 */
+
+.l-ctrl {
+	grid-area: l-ctrl;
+}
+.fn {
+	grid-area: fn;
+}
+.windows {
+	grid-area: windows;
+}
+.l-alt {
+	grid-area: l-alt;
+}
+.spaceBar {
+	grid-area: spaceBar;
+	width: 24rem;
+}
+.r-alt {
+	grid-area: r-alt;
+}
+.r-ctrl {
+	grid-area: r-ctrl;
+}
+.left {
+	grid-area: left;
+}
+.up {
+	grid-area: up;
+}
+.down {
+	grid-area: down;
+}
+.right {
+	grid-area: right;
+}
+.up-down {
+	display: flex;
+	flex-direction: column;
+	height: 4rem;
+}
+
+.zero-h {
+	grid-area: zero-h;
+	width: 8rem;
+}
+.period-2 {
+	grid-area: period-2;
+}
